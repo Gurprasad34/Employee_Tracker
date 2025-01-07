@@ -1,7 +1,5 @@
 {
   "compilerOptions": {
-    "noEmit": true,
-    "allowImportingTsExtensions" : true,
     "target": "ES2020",
     "useDefineForClassFields": true,
     "lib": ["ES2020", "DOM", "DOM.Iterable"],
@@ -10,18 +8,18 @@
     "rootDir": "src",
     "outDir": "dist",
 
-    /* JavaScript Support */
-  
 
     /* Bundler mode */
+    "moduleResolution": "bundler",
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "react-jsx",
 
     /* Linting */
+    "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true
   },
-  "include": ["src", "db/connection.ts", "index.ts"]
+  "include": ["src"]
 }
